@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>틀미업 | Trend Me Up</title>
+    <link>https://trendmeup.xyz</link>
+    <description>세상을 바꾸는 트렌드, 지금 여기서 시작됩니다</description>
+    <language>ko</language>
+    <pubDate>Mon, 02 Dec 2024 12:00:00 +0900</pubDate>
+    <lastBuildDate>Mon, 02 Dec 2024 12:00:00 +0900</lastBuildDate>
+
+    <item>
+      <title>최신 뉴스 1</title>
+      <link>https://trendmeup.xyz/news/latest-news-1</link>
+      <description>최신 뉴스 1의 간략한 설명</description>
+      <pubDate>Mon, 02 Dec 2024 10:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>최신 뉴스 2</title>
+      <link>https://trendmeup.xyz/news/latest-news-2</link>
+      <description>최신 뉴스 2의 간략한 설명</description>
+      <pubDate>Mon, 01 Dec 2024 15:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
