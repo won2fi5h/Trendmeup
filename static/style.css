@@ -1,0 +1,235 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none; /* 기본적으로 숨김 */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li {
+    position: relative;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  /* 드롭다운 메뉴 */
+  nav ul ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0;
+    z-index: 1000;
+  }
+  
+  nav ul li:hover > ul.dropdown {
+    display: block;
+  }
+  
+  /* 모바일 스타일 */
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* 모바일에서 햄버거 버튼 표시 */
+    }
+  
+    nav {
+      display: none; /* 기본적으로 메뉴 숨김 */
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 20px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    nav ul ul.dropdown {
+      position: relative; /* 드롭다운 메뉴도 세로로 표시 */
+    }
+  
+    .hidden {
+      display: none;
+    }
+  
+    .visible {
+      display: flex;
+    }
+  }
+  /* About Us 페이지 스타일 */
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #555;
+    margin-top: 30px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  footer {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+  /* Contact Us 페이지 스타일 */
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #555;
+    margin-top: 30px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  footer {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+  .categories-section {
+    max-width: 1200px;
+    margin: 40px auto; /* 상하 40px, 좌우 자동 정렬 */
+    padding: 20px; /* 내부 여백 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .categories-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px; /* 제목 아래 여백 */
+    color: #333;
+  }
+  
+  .category {
+    margin: 20px 0; /* 카테고리 간격 */
+  }
+  
+  .category h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 10px; /* 제목 아래 여백 */
+  }
+  
+  .category ul {
+    list-style: none;
+    padding-left: 20px; /* 목록의 들여쓰기 */
+  }
+  
+  .category ul li {
+    font-size: 16px;
+    margin: 5px 0; /* 항목 간격 */
+  }
+  
+  .category ul li a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .category ul li a:hover {
+    text-decoration: underline;
+  }
+  
