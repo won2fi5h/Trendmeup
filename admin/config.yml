@@ -1,18 +1,19 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: github
+  repo: won2fi5h/Trendmeup # GitHub 저장소 이름
+  branch: main # GitHub Pages가 배포되는 브랜치
 
 media_folder: static/uploads
 public_folder: /uploads
 
-
 collections:
-  - name: "posts"
-    label: "뉴스 게시글"
-    folder: "_posts"
+  - name: blog
+    label: Blog
+    folder: _posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "제목", name: "title", widget: "string" }
-      - { label: "내용", name: "body", widget: "markdown" }
-      - { label: "이미지", name: "image", widget: "image" }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime }
+      - { name: body, label: Body, widget: markdown }
+      - { name: image, label: Featured Image, widget: image }
