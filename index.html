@@ -8,7 +8,7 @@
   <meta name="naverbot" content="index, follow">
   <meta name="yeti" content="index, follow">
   <title>틀미업 | Trend Me Up</title>
-  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="./static/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -67,53 +67,106 @@
       font-weight: 400;
       line-height: 1.6;
     }
+
+    .categories-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .category {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .category h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .category ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .category ul li {
+      margin: 10px 0;
+    }
+
+    .category ul li a {
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: 500;
+    }
+
+    .category ul li a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="header-container">
-      <h1>Trend me up</h1>
+      <h1>Trend Me Up</h1>
       <p>세상을 바꾸는 트렌드, 지금 여기서 시작됩니다</p>
     </div>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#politics">정치</a></li>
-      <li><a href="#economy">경제</a></li>
-      <li><a href="#law">법률</a></li>
-      <li><a href="#society">사회</a></li>
-      <li><a href="#culture">생활/문화</a></li>
-      <li><a href="#science">IT/과학</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./pages/news/politics/index.html">정치</a></li>
+      <li><a href="./pages/news/economy/index.html">경제</a></li>
+      <li><a href="./pages/news/law/index.html">법률</a></li>
+      <li><a href="./pages/news/society/index.html">사회</a></li>
+      <li><a href="./pages/news/culture/index.html">생활/문화</a></li>
+      <li><a href="./pages/news/science/index.html">IT/과학</a></li>
     </ul>
   </nav>
-    <!-- Latest, Hot, Trend 섹션 추가 -->
+
+  <!-- Latest, Hot, Trend 섹션 -->
+  <div class="container">
+    <h2>Explore the Trends</h2>
     <div class="categories-section">
-      <h2>Explore the Trends</h2>
       <div class="category latest">
         <h3>Latest</h3>
-        <ul id="latest-posts"></ul>
+        <ul id="latest-posts">
+          <li><a href="./pages/news/politics/post-1.html">Latest Politics News</a></li>
+          <li><a href="./pages/news/economy/post-1.html">Latest Economy News</a></li>
+        </ul>
       </div>
       <div class="category hot">
         <h3>Hot</h3>
-        <ul id="hot-posts"></ul>
+        <ul id="hot-posts">
+          <li><a href="./pages/news/society/post-1.html">Hot Society News</a></li>
+          <li><a href="./pages/news/culture/post-1.html">Hot Culture News</a></li>
+        </ul>
       </div>
       <div class="category trend">
         <h3>Trend</h3>
-        <ul id="trend-posts"></ul>
+        <ul id="trend-posts">
+          <li><a href="./pages/news/science/post-1.html">Trending in Science</a></li>
+        </ul>
       </div>
-    </div>    
+    </div>
   </div>
 
   <footer>
     <p>
-      <a href="about.html">About Us</a> | 
-      <a href="contact.html">Contact Us</a> | 
+      <a href="./pages/about.html">About Us</a> | 
+      <a href="./pages/contact.html">Contact Us</a> | 
       <a href="#privacy">개인정보처리방침</a>
     </p>
-
     <p>&copy; 2024 틀미업 | Trend Me Up. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
