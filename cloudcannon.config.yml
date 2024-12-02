@@ -1,0 +1,66 @@
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+  my_jekyll_site_drafts:
+    path: my-jekyll-site/_drafts
+    name: My Jekyll Site Drafts
+    icon: satellite_alt
+    create:
+      path: ''
+      publish_to: my_jekyll_site_posts
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          values: collections.my_jekyll_site_posts[*].categories
+          allow_create: true
+      tags:
+        type: multiselect
+        options:
+          values: collections.my_jekyll_site_posts[*].tags
+          allow_create: true
+  my_jekyll_site_posts:
+    path: my-jekyll-site/_posts
+    name: My Jekyll Site Posts
+    icon: satellite_alt
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          values: collections.my_jekyll_site_posts[*].categories
+          allow_create: true
+      tags:
+        type: multiselect
+        options:
+          values: collections.my_jekyll_site_posts[*].tags
+          allow_create: true
+    add_options:
+      - name: Add Post
+      - name: Add Draft
+        collection: my_jekyll_site_drafts
+paths:
+  static: ''
+  uploads: uploads
+timezone: Asia/Seoul
+markdown:
+  engine: kramdown
+  options:
+    heading_ids: false
+    gfm: false
+    breaks: false
+    typographer: false
+    attributes: true
+    attribute_elements:
+      inline: right
+      block: below
+      tr: none
+      td: none
+      li: right-of-prefix
+    treat_indentation_as_code: true
+_snippets_imports:
+  jekyll: true
